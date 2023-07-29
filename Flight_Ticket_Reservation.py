@@ -72,6 +72,24 @@ def seat_count(flight,seat, no_of_pass):
             else:
                 flag = 1
 
+    elif flight.lower() == 'spice':
+        if seat.lower() == 'business':
+            if (seat_bus_indigo - no_of_pass) > 0:
+                flag = 0
+            else:
+                flag = 1
+
+        elif seat.lower() == 'economy':
+            if (seat_eco_indigo - no_of_pass) > 0:
+                flag = 0
+            else:
+                flag = 1
+        else:
+            if (seat_first_indigo - no_of_pass) > 0:
+                flag = 0
+            else:
+                flag = 1
+
     return flag
 
 
@@ -126,7 +144,7 @@ def seat_numbers(seat):
 def flights(ori_place, dest_place):
     f_1, f_2, f_3 = 0, 0, 0
     df_1 = air_india["Origin"].str.contains(ori_place) & air_india['Destination(D)'].str.contains(dest_place)
-    if df_1.any(axis=0):
+    if df_1:
         print('\nAIR INDIA')
         print(air_india.loc[
                   air_india['Origin'].str.contains(ori_place) & air_india['Destination(D)'].str.contains(dest_place)])
@@ -135,7 +153,7 @@ def flights(ori_place, dest_place):
         f_1 = 1
 
     df_2 = indigo['Origin'].str.contains(ori_place) & indigo['Destination(D)'].str.contains(dest_place)
-    if df_2.any(axis=0):
+    if df_2:
         print('\nINDIGO')
         print(indigo.loc[indigo['Origin'].str.contains(ori_place) & indigo['Destination(D)'].str.contains(dest_place)])
     else:
@@ -143,7 +161,7 @@ def flights(ori_place, dest_place):
         f_2 = 1
 
     df_3 = spice_jet['Origin'].str.contains(ori_place) & spice_jet['Destination(D)'].str.contains(dest_place)
-    if df_3.any(axis=0):
+    if df_3:
         print('\nSPICE JET')
         print(spice_jet.loc[
                   spice_jet['Origin'].str.contains(ori_place) & spice_jet['Destination(D)'].str.contains(dest_place)])
@@ -188,10 +206,6 @@ def details(ori_place, dest_place):
                 print("Sorry!! Required number of seats are not available.")
                 sys.exit()
             
-            df = pd.DataFrame.from_dict(lst, orient='index',
-                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
-                                                        'Flight No.', 'Seat',  'Ticket No.'])
-            df.to_csv("airindia.csv", index = False)
             
             if seat.lower() == 'business':
                 price += business_air
@@ -199,6 +213,12 @@ def details(ori_place, dest_place):
                 price += economy_air
             else:
                 price += first_air
+                
+            df = pd.DataFrame.from_dict(lst, orient='index',
+                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
+                                                        'Flight No.', 'Seat',  'Ticket No.'])
+            df.to_csv("airindia.csv", index = False)
+            
             print("\nTicket price: ", price)
             
             print("\nName of Passenger                    Ticket No.")
@@ -235,11 +255,7 @@ def details(ori_place, dest_place):
             else:
                 print("Sorry!! Required number of seats are not available.")
                 sys.exit()
-            
-            df = pd.DataFrame.from_dict(lst, orient='index',
-                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
-                                                        'Flight No.', 'Seat',  'Ticket No.'])
-            df.to_csv("indigo.csv", index = False)
+        
             
             if seat.lower() == 'business':
                 price += busi_indigo
@@ -247,6 +263,12 @@ def details(ori_place, dest_place):
                 price += eco_indigo
             else:
                 price += first_indigo
+
+            df = pd.DataFrame.from_dict(lst, orient='index',
+                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
+                                                        'Flight No.', 'Seat',  'Ticket No.'])
+            df.to_csv("indigo.csv", index = False)
+            
             print("\nTicket price: ", price)
             
             print("\nName of Passenger                    Ticket No.")
@@ -283,10 +305,6 @@ def details(ori_place, dest_place):
                 print("Sorry!! Required number of seats are not available.")
                 sys.exit()
             
-            df = pd.DataFrame.from_dict(lst, orient='index',
-                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
-                                                        'Flight No.', 'Seat',  'Ticket No.'])
-            df.to_csv("spice.csv", index = False)
                 
             if seat.lower() == 'business':
                 price += busi_spice
@@ -294,6 +312,12 @@ def details(ori_place, dest_place):
                 price += eco_spice
             else:
                 price += first_spice
+
+            df = pd.DataFrame.from_dict(lst, orient='index',
+                                               columns=['Name', 'Passport No.', 'Contact No.', 'Age','Date', 'Flight',
+                                                        'Flight No.', 'Seat',  'Ticket No.'])
+            df.to_csv("spice.csv", index = False)
+            
             print("\nTicket price: ", price)
             
             print("\nName of Passenger                    Ticket No.")
