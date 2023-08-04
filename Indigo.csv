@@ -1,0 +1,71 @@
+Flight No.,Origin,Destination,Departure,Arrival,Date
+AI 0896,Ahmedabad(AMD),Lucknow(LKO),9:10,18:45,10/25/2021
+AI 0897,Ahmedabad(AMD),Guwahati(GAU),6:10,16:20,10/25/2021
+AI 0898,Ahmedabad(AMD),Varanasi(VNS),6:15,11:25,10/25/2021
+AI 0744,Ahmedabad(AMD),Goa(GOI),18:15,19:55,10/25/2021
+AI 0745,Ahmedabad(AMD),Bhubaneswar(BBI),22:20,14:10,10/26/2021
+AI 0746,Ahmedabad(AMD),Amritsar(ATQ),12:55,15:15,10/26/2021
+AI 0532,Ahmedabad(AMD),Kochi(COK),21:35,10:50,10/25/2021
+AI 0533,Amritsar(ATQ),Tirupati(TIR),6:50,13:35,10/25/2021
+9I 0506,Amritsar(ATQ),Lucknow(LKO),9:55,14:50,10/31/2021
+AI 0454,Amritsar(ATQ),Nagpur(NAG),22:50,7:00,10/25/2021
+AI 0414,Amritsar(ATQ),Goa(GOI),10:40,19:10,10/25/2021
+AI 0454,Amritsar(ATQ),Kochi(COK),9:55,18:50,10/25/2021
+AI 0480,Bangalore(BLR),Nagpur(NAG),17:50,23:25,10/31/2021
+AI 0481,Bangalore(BLR),Guwahati(GAU),23:20,6:40,10/31/2021
+AI 0726,Bangalore(BLR),Kolkata(CCU),12:55,19:20,11/3/2021
+AI 0726,Bangalore(BLR),Mumbai(BOM),5:45,9:15,11/3/2021
+AI 0650,Bangalore(BLR),Hyderabad(HYD),5:45,14:50,10/31/2021
+AI 0650,Coimbatore(CJB),Tirupati(TIR),11:40,19:30,10/25/2021
+AI 0650,Delhi (DEL),Coimbatore(CJB),5:55,11:10,10/31/2021
+AI 0453,Delhi (DEL),Coimbatore(CJB),11:35,17:35,10/25/2021
+AI 0453,Delhi (DEL),Srinagar(SXR),7:40,9:00,10/26/2021
+AI 0726,Delhi (DEL),Srinagar(SXR),17:30,19:00,10/25/2021
+AI 0726,Delhi (DEL),Tiruchirapalli(TRZ),22:30,9:20,10/27/2021
+AI 0442,Delhi (DEL),Tiruchirapalli(TRZ),9:45,18:20,10/26/2021
+AI 0442,Delhi (DEL),Goa(GOI),5:35,12:25,10/25/2021
+AI 0880,Delhi (DEL),Goa(GOI),19:55,7:25,10/25/2021
+AI 0565,Goa (GOI),Kochi(COK),9:00,13:25,10/25/2021
+AI 0640,Goa (GOI),Varanasi(VNS),14:50,20:00,10/25/2021
+AI 0640,Goa (GOI),Nagpur(NAG),14:25,20:30,10/26/2021
+AI 0610,Goa (GOI),Srinagar(SXR),13:25,19:00,10/31/2021
+AI 0610,Guwahati (GAU),Kochi(COK),14:55,20:10,10/31/2021
+AI 0429,Guwahati (GAU),Varanasi(VNS),19:30,7:15,10/31/2021
+9I 0645,Guwahati (GAU),Nagpur(NAG),11:10,20:40,11/1/2021
+AI 0885,Guwahati (GAU),Coimbatore(CJB),6:25,11:00,11/2/2021
+AI 0885,Guwahati (GAU),Srinagar(SXR),9:00,16:00,11/3/2021
+AI 0425,Hyderbad(HYD),Srinagar(SXR),6:00,10:30,11/3/2021
+AI 0425,Hyderbad(HYD),Srinagar(SXR),8:40,13:25,10/31/2021
+AI 0411,Hyderbad(HYD),Srinagar(SXR),22:45,7:10,10/26/2021
+AI 0411,Hyderbad(HYD),Coimbatore(CJB),9:50,11:10,10/31/2021
+AI 0764,Indore (IDR),Varanasi(VNS),8:30,14:45,10/31/2021
+AI 0764,Indore (IDR),Varanasi(VNS),16:25,22:40,10/31/2021
+AI 0865,Indore (IDR),Kochi(COK),11:55,16:30,11/1/2021
+AI 0865,Indore (IDR),Kochi(COK),7:30,16:30,11/2/2021
+AI 0648,Indore (IDR),Coimbatore(CJB),6:30,11:10,11/3/2021
+AI 0648,Indore (IDR),Coimbatore(CJB),16:25,23:50,11/3/2021
+9I 0745,Indore (IDR),Tiruchirapalli(TRZ),10:40,18:05,10/31/2021
+AI 0425,Indore (IDR),Tiruchirapalli(TRZ),6:30,18:20,10/26/2021
+AI 0425,Indore (IDR),Tirupati(TIR),6:30,11:00,10/31/2021
+AI 0699,Indore (IDR),Tirupati(TIR),17:05,9:10,10/25/2021
+AI 0699,Indore (IDR),Goa(GOI),6:30,10:45,10/26/2021
+9I 0506,Indore (IDR),Goa(GOI),15:20,20:50,10/25/2021
+9I 0506,Jaipur (JAI),Varanasi(VNS),7:40,14:25,10/27/2021
+9I 0876,Jaipur (JAI),Varanasi(VNS),12:10,22:40,10/26/2021
+9I 0876,Jaipur (JAI),Amritsar(ATQ),5:50,7:05,10/25/2021
+9I 0876,Jaipur (JAI),Amritsar(ATQ),13:55,19:15,10/25/2021
+AI 0721,Jaipur (JAI),Amritsar(ATQ),8:40,6:15,10/25/2021
+AI 0674,Jaipur (JAI),Goa(GOI),23:05,7:25,10/25/2021
+AI 0770,Jaipur (JAI),Goa(GOI),8:20,19:55,10/26/2021
+AI 0824,Jaipur (JAI),Goa(GOI),10:10,14:25,10/31/2021
+AI 0824,Jaipur (JAI),Kochi(COK),11:50,18:45,10/31/2021
+AI 0468,Jaipur (JAI),Kochi(COK),9:40,16:55,10/31/2021
+AI 0419,Jaipur (JAI),Coimbatore(CJB),6:15,11:10,11/1/2021
+AI 0420,Jaipur (JAI),Coimbatore(CJB),10:05,15:30,11/2/2021
+AI 0421,Jaipur (JAI),Tiruchirapalli(TRZ),10:50,18:05,11/3/2021
+AI 0490,Jaipur (JAI),Tiruchirapalli(TRZ),6:30,18:05,11/3/2021
+AI 0490,Jaipur (JAI),Tirupati(TIR),6:15,11:00,10/31/2021
+AI 0424,Jaipur (JAI),Tirupati(TIR),20:15,7:45,10/26/2021
+AI 0494,Jaipur (JAI),Guwahati(GAU),9:40,18:30,10/31/2021
+AI 0646,Jaipur (JAI),Guwahati(GAU),21:10,10:15,10/25/2021
+AI 0647,Jaipur (JAI),Srinagar(SXR),7:40,11:40,10/26/2021
